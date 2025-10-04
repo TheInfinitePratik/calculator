@@ -1,0 +1,99 @@
+/* 
+  Author: Pratik Mishra
+  Project: Calculator UI
+  © 2025 Pratik Mishra. All rights reserved.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("blue-blank-notepad-with-copy-space_23-2148475334.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  
+}
+
+.calculator {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 320px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.calculator h1 {
+  font-size: 28px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 15px #0099dd, 0 0 5px darkblue;
+  margin-bottom: 20px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: #237ad1;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.keypad button {
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.keypad button:hover {
+  background-color: #d0e6ff;
+  transform: scale(1.10);
+}
+
+.equals {
+  grid-column: span 4;
+  /* background-color: #4CAF50; */
+  color: white;
+}
+
+.copy-right{
+    position: relative;
+    left: 700px;
+    top: -50px;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #333;
+}
+/* 
+  Author: Pratik Mishra
+  Project: Calculator UI
+  © 2025 Pratik Mishra. All rights reserved.
+*/
